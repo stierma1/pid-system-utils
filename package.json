@@ -1,0 +1,22 @@
+{
+  "name": "pid-system-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stierma1/pid-system-utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stierma1/pid-system-utils/issues"
+  },
+  "homepage": "https://github.com/stierma1/pid-system-utils#readme",
+  "dependencies": {
+    "pid-system": "^3.0.4"
+  }
+}
