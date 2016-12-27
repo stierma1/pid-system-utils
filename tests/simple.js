@@ -3,7 +3,7 @@ function start(){
 }
 
 function one(){
-  return 1
+  return [1,1]
 }
 
 function plusOne(x){

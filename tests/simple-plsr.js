@@ -1,3 +1,4 @@
+console.log()
 var plsrFn = require("../lib/index").PLSR
 var System = require("pid-system");
 var Tokens = require("../lib/plsr/router/tokens");
@@ -13,7 +14,15 @@ var plsr = {
   routes:{
     simple: [{name:"start", eventName:"data", preapply:function(data){
       return data;
-    }}, {name:"one"},{name:"plusOne"}, {name:"log"}],
+    }},{name:"one"},
+      {fork:true},
+      {
+        name:"one", 
+        condition: function(d){
+          return Tokens.DROP()
+        }
+      },
+    {name:"plusOne"}, {name:"log"}],
     simple2: [{name:"start", eventName:"data", preapply:function(data){
       return data;
     }}, {name:"one", condition:function(data){
